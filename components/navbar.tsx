@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -127,19 +128,20 @@ export function Navbar() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="mb-10"
               >
-                <div className="flex items-center gap-2 group cursor-pointer" onClick={handleLinkClick}>
+                <div className="flex items-center justify-center group cursor-pointer" onClick={handleLinkClick}>
                   <motion.div 
-                    className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 border border-primary/30 shadow-[0_0_15px_-3px_hsl(0_90%_55%_/_0.3)] group-hover:shadow-[0_0_20px_-3px_hsl(0_90%_55%_/_0.5)] transition-all"
-                    whileHover={{ rotate: 360 }}
-                    transition={{ duration: 0.6 }}
+                    className="relative h-40 w-40"
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.3 }}
                   >
-                    <span className="text-base font-bold text-primary font-mono">
-                      ARC
-                    </span>
+                    <Image
+                      src="/arclogo.png"
+                      alt="ARC Logo"
+                      fill
+                      className="object-contain scale-125"
+                      priority
+                    />
                   </motion.div>
-                  <span className="text-lg font-bold text-foreground tracking-tight">
-                    Agnel Robotics Club
-                  </span>
                 </div>
               </motion.div>
 

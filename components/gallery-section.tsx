@@ -24,7 +24,7 @@ const models = [
     title: "Toothless Dragon",
     material: "PLA+",
     time: "8h 30m",
-    image: "/toothless.jpeg",
+    image: "/toothless12.jpg",
   },
   {
     title: "Bone Dragon",

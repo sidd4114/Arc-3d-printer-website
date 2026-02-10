@@ -9,9 +9,13 @@ const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron" });
 const playfairDisplay = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
 export const metadata: Metadata = {
-  title: "ARC | Agnel Robotics Club - Precision 3D Printing",
+  title: "3D Printing at ARC",
   description:
     "Precision 3D printing services by Agnel Robotics Club at FCRIT. From prototypes to final prints — engineered by ARC.",
+  icons: {
+    icon: '/arclogo.png',
+    apple: '/arclogo.png',
+  },
 };
 
 export const viewport: Viewport = {

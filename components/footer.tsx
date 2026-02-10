@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Instagram, Linkedin, Mail, Github } from "lucide-react";
+import Image from "next/image";
 
 const socialLinks = [
   { icon: Instagram, href: "https://www.instagram.com/arc_fcrit?igsh=bXB0anVla3o1MWd1", label: "Instagram" },
@@ -27,11 +28,14 @@ export function Footer() {
         <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between">
           {/* Logo & Brand */}
           <div className="flex flex-col items-center gap-4 md:items-start">
-            <div className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 border border-primary/30 shadow-[0_0_10px_-3px_hsl(0_90%_55%_/_0.3)]">
-                <span className="text-sm font-bold text-primary font-mono">
-                  ARC
-                </span>
+            <div className="flex items-center gap-3">
+              <div className="relative h-20 w-20">
+                <Image
+                  src="/arclogo.png"
+                  alt="ARC Logo"
+                  fill
+                  className="object-contain scale-125"
+                />
               </div>
               <span className="text-lg font-semibold text-foreground tracking-tight">
                 Agnel Robotics Club
