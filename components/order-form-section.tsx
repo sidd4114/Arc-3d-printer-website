@@ -209,7 +209,7 @@ export function OrderFormSection() {
                           value={formData.rollNumber}
                           onChange={handleInputChange}
                           className="w-full px-4 py-3 rounded-lg bg-muted/50 border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                          placeholder="e.g., 2023BTECXXX"
+                          placeholder="1234567"
                         />
                       </div>
                       
