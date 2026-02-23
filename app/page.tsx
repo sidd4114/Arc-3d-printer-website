@@ -17,6 +17,21 @@ export default function Page() {
     <>
       <ParticlesBackground />
       <Navbar />
+      <div className="relative z-50 bg-gradient-to-r from-red-600/20 via-orange-600/20 to-red-600/20 backdrop-blur-md border-b border-red-500/20">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center justify-center gap-3 text-center">
+            <div className="hidden sm:flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-red-500 to-orange-500 text-white font-bold text-lg shadow-lg">
+              ✓
+            </div>
+            <p className="text-base md:text-lg font-semibold bg-gradient-to-r from-red-400 via-orange-400 to-red-400 bg-clip-text text-transparent">
+              Bring Your Own Filament - No Extra Cost for Printing!
+            </p>
+            <div className="hidden sm:block px-3 py-1 rounded-full bg-gradient-to-r from-red-500 to-orange-500 text-white text-xs font-bold uppercase tracking-wider shadow-lg">
+              Free
+            </div>
+          </div>
+        </div>
+      </div>
       <main className="relative min-h-screen">
         <HeroSection />
         <div className="relative z-20 bg-background">
